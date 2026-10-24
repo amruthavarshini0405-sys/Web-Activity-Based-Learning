@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: #263238;
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        header {
+            background-color: #173b45;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        nav a:hover {
+            color: #a9e4d7;
+        }
+
+        /* Home Section */
+        .hero {
+            background-color: #eaf5f2;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h2 {
+            font-size: 35px;
+        }
+
+        .hero span {
+            color: #28766d;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #28766d;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #173b45;
+        }
+
+        /* General Sections */
+        section {
+            padding: 30px 10%;
+        }
+
+        section h2 {
+            color: #173b45;
+        }
+
+        .soft {
+            background-color: #f4f8f7;
+        }
+
+        /* Education and Project Boxes */
+        .info-box {
+            background-color: white;
+            padding: 15px;
+            margin: 15px 0;
+            border-left: 4px solid #28766d;
+        }
+
+        /* Skills and Hobbies */
+        .tag {
+            display: inline-block;
+            background-color: #d8eee8;
+            color: #173b45;
+            padding: 8px 12px;
+            margin: 5px;
+            border-radius: 20px;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: #eaf5f2;
+            text-align: center;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #173b45;
+            color: white;
+            text-align: center;
+            padding: 12px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            .hero h2 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <h1>My Portfolio</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <h2>Hello, I'm <span>Your Name</span></h2>
+
+        <p>
+            I am a Computer Science student interested in
+            technology, programming, and web development.
+        </p>
+
+        <a href="#about" class="button">Know More About Me</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+
+        <p>
+            I am a first-year B.Tech student in Computer Science
+            and Engineering. I enjoy learning new technologies,
+            developing my skills, and solving problems.
+        </p>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="soft">
+        <h2>Educational Qualifications</h2>
+
+        <div class="info-box">
+            <h3>Bachelor of Technology</h3>
+            <p>Branch: Computer Science and Engineering</p>
+            <p>College: Your College Name</p>
+            <p>Year: First Year</p>
+        </div>
+
+        <div class="info-box">
+            <h3>Intermediate</h3>
+            <p>College: Your Intermediate College Name</p>
+            <p>Year: Your Completion Year</p>
+        </div>
+
+        <div class="info-box">
+            <h3>School Education</h3>
+            <p>School: Your School Name</p>
+            <p>Year: Your Completion Year</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Technical Skills</h2>
+
+        <p>Skills I am learning and developing:</p>
+
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">Python Basics</span>
+        <span class="tag">Problem Solving</span>
+        <span class="tag">Communication</span>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="soft">
+        <h2>My Projects</h2>
+
+        <div class="info-box">
+            <h3>Personal Portfolio Website</h3>
+            <p>
+                A website created using HTML and CSS to display
+                my profile, education, skills, and interests.
+            </p>
+        </div>
+
+        <div class="info-box">
+            <h3>Python Practice Programs</h3>
+            <p>
+                Beginner-level Python programs created while
+                learning basic programming concepts.
+            </p>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section>
+        <h2>Hobbies and Interests</h2>
+
+        <span class="tag">Listening to Music</span>
+        <span class="tag">Reading</span>
+        <span class="tag">Learning Technology</span>
+        <span class="tag">Creative Designing</span>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+
+        <p>Email: yourname@example.com</p>
+        <p>Location: Your City</p>
+
+        <a href="mailto:yourname@example.com" class="button">
+            Send Me an Email
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Your Name | Personal Portfolio Website</p>
+    </footer>
+
+</body>
+</html>

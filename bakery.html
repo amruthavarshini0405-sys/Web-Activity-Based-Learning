@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Crumbs Bakery</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fffaf5;
+            color: #49352d;
+        }
+
+        header {
+            background-color: #8b4d3b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #6f3d2e;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 12px;
+        }
+
+        nav a:hover {
+            color: #ffd9b8;
+        }
+
+        .hero {
+            background-color: #f6e6d8;
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+        .hero h2 {
+            font-size: 35px;
+            color: #8b4d3b;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #9b5a43;
+            color: white;
+            padding: 10px 18px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #6f3d2e;
+        }
+
+        section {
+            padding: 30px 8%;
+        }
+
+        h2 {
+            color: #8b4d3b;
+            text-align: center;
+        }
+
+        .products {
+            text-align: center;
+        }
+
+        .product {
+            display: inline-block;
+            background-color: white;
+            border: 1px solid #ead5c6;
+            border-radius: 8px;
+            width: 230px;
+            margin: 12px;
+            padding: 15px;
+            vertical-align: top;
+        }
+
+        .product .emoji {
+            font-size: 55px;
+            background-color: #fff1e6;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .price {
+            color: #9b5a43;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .offer {
+            background-color: #8b4d3b;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .offer h2 {
+            color: white;
+        }
+
+        .contact {
+            background-color: #f6e6d8;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #49352d;
+            color: white;
+            text-align: center;
+            padding: 12px;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 6px;
+            }
+
+            .product {
+                width: 80%;
+            }
+
+            .hero h2 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Sweet Crumbs Bakery</h1>
+        <p>Freshly Baked with Love!</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Our Menu</a>
+        <a href="#offers">Special Offers</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <h2>A Little Sweetness Every Day!</h2>
+        <p>Discover delicious cakes, pastries, cookies, and other treats.</p>
+        <a href="#menu" class="button">Explore Our Menu</a>
+    </section>
+
+    <!-- Products Section -->
+    <section id="menu" class="products">
+        <h2>Our Best Sellers</h2>
+
+        <div class="product">
+            <div class="emoji">🎂</div>
+            <h3>Chocolate Cake</h3>
+            <p>Rich chocolate cake with creamy frosting.</p>
+            <p class="price">₹550</p>
+        </div>
+
+        <div class="product">
+            <div class="emoji">🧁</div>
+            <h3>Vanilla Cupcakes</h3>
+            <p>Soft cupcakes topped with vanilla cream.</p>
+            <p class="price">₹80 each</p>
+        </div>
+
+        <div class="product">
+            <div class="emoji">🍪</div>
+            <h3>Chocolate Cookies</h3>
+            <p>Crispy cookies filled with chocolate chips.</p>
+            <p class="price">₹150 per box</p>
+        </div>
+    </section>
+
+    <!-- Special Offers -->
+    <section id="offers" class="offer">
+        <h2>Weekend Special Offer!</h2>
+        <p>Enjoy 10% off selected pastries every Saturday and Sunday.</p>
+        <p>Visit our bakery to know more about our offers.</p>
+    </section>
+
+    <!-- About Section -->
+    <section>
+        <h2>Why Choose Us?</h2>
+        <p style="text-align: center;">
+            We offer freshly baked products, quality ingredients,
+            delicious flavours, and treats for every occasion.
+        </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Visit Our Bakery</h2>
+        <p>Address: Main Road, Your City</p>
+        <p>Opening Hours: 9:00 AM – 8:00 PM</p>
+        <p>Email: sweetcrumbs@example.com</p>
+
+        <a href="mailto:sweetcrumbs@example.com" class="button">
+            Contact Us
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Sweet Crumbs Bakery | Baked with Love</p>
+    </footer>
+
+</body>
+</html>
