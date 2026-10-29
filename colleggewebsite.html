@@ -1,323 +1,200 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bright Future College</title>
+    <title>Greenfield College</title>
 
     <style>
         body {
-            margin: 0;
             font-family: Arial, sans-serif;
-            background-color: white;
-            color: #26364a;
-            line-height: 1.6;
-        }
-
-        /* Header */
-        header {
-            background-color: #183d66;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        header h1 {
             margin: 0;
+            background-color: #f4f8fc;
+            color: #222222;
+            text-align: center;
         }
 
-        /* Navigation Bar */
+        header {
+            background-color: #123c69;
+            color: white;
+            padding: 25px;
+        }
+
         nav {
-            background-color: #102b49;
-            padding: 12px;
-            text-align: center;
+            background-color: #d9e8f5;
+            padding: 15px;
         }
 
         nav a {
-            color: white;
+            color: #123c69;
             text-decoration: none;
             margin: 12px;
+            font-weight: bold;
         }
 
         nav a:hover {
-            color: #8ed1f0;
+            color: #e67e22;
         }
 
-        /* Banner Section */
-        .hero {
-            background-color: #eaf3fb;
-            text-align: center;
-            padding: 55px 20px;
+        section {
+            padding: 25px;
         }
 
-        .hero h2 {
-            color: #183d66;
-            font-size: 35px;
+        h2 {
+            color: #123c69;
+        }
+
+        .college-image {
+            width: 70%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th {
+            background-color: #123c69;
+            color: white;
+        }
+
+        th, td {
+            border: 1px solid #999999;
+            padding: 12px;
+        }
+
+        .facility {
+            display: inline-block;
+            width: 220px;
+            margin: 10px;
+            padding: 15px;
+            background-color: #d9e8f5;
+            border-radius: 8px;
         }
 
         .button {
             display: inline-block;
-            background-color: #287bb5;
+            background-color: #123c69;
             color: white;
-            padding: 10px 20px;
+            padding: 12px 20px;
             text-decoration: none;
             border-radius: 5px;
         }
 
         .button:hover {
-            background-color: #183d66;
+            background-color: #e67e22;
         }
 
-        /* General Sections */
-        section {
-            padding: 30px 8%;
-        }
-
-        section h2 {
-            color: #183d66;
-            text-align: center;
-        }
-
-        .soft {
-            background-color: #f4f8fc;
-        }
-
-        /* Course Information */
-        .course {
-            display: inline-block;
-            background-color: white;
-            border: 1px solid #dce8f3;
-            border-radius: 5px;
-            width: 250px;
-            padding: 15px;
-            margin: 10px;
-            vertical-align: top;
-        }
-
-        .course h3 {
-            color: #287bb5;
-        }
-
-        /* Faculty Information */
-        .faculty {
-            background-color: #eaf3fb;
-            padding: 15px;
-            margin: 12px 0;
-            border-left: 4px solid #287bb5;
-        }
-
-        /* Facilities */
-        .facility {
-            display: inline-block;
-            width: 200px;
-            margin: 10px;
-            padding: 15px;
-            background-color: #f4f8fc;
-            vertical-align: top;
-        }
-
-        /* Admissions */
-        .admission {
-            background-color: #183d66;
-            color: white;
-            text-align: center;
-            padding: 35px 20px;
-        }
-
-        .admission h2 {
-            color: white;
-        }
-
-        /* Contact */
-        .contact {
-            text-align: center;
-            background-color: #eaf3fb;
-        }
-
-        /* Footer */
         footer {
-            background-color: #102b49;
+            background-color: #123c69;
             color: white;
-            text-align: center;
             padding: 12px;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 600px) {
-            nav a {
-                display: inline-block;
-                margin: 6px;
-            }
-
-            .course {
-                width: 80%;
-            }
-
-            .hero h2 {
-                font-size: 28px;
-            }
-
-            .facility {
-                width: 80%;
-            }
         }
     </style>
 </head>
 
 <body>
 
-    <!-- Header -->
     <header>
-        <h1>Bright Future College</h1>
+        <h1>Greenfield College</h1>
         <p>Learn Today, Lead Tomorrow</p>
     </header>
 
-    <!-- Navigation -->
     <nav>
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#courses">Courses</a>
-        <a href="#faculty">Faculty</a>
         <a href="#facilities">Facilities</a>
-        <a href="#admission">Admissions</a>
         <a href="#contact">Contact</a>
     </nav>
 
-    <!-- Home Section -->
-    <section id="home" class="hero">
-        <h2>Welcome to Bright Future College</h2>
+    <section id="home">
+        <h2>Welcome to Greenfield College</h2>
+        <p>Building knowledge, skills and a better future.</p>
 
-        <p>
-            A place to learn, grow, discover new opportunities,
-            and prepare for a successful future.
-        </p>
-
-        <a href="#courses" class="button">Explore Our Courses</a>
+        <img
+            src="https://images.unsplash.com/photo-1562774053-701939374585?w=800"
+            alt="College building"
+            class="college-image">
     </section>
 
-    <!-- About Section -->
     <section id="about">
         <h2>About Our College</h2>
 
         <p>
-            Bright Future College aims to provide quality education
-            and encourage students to develop knowledge, practical
-            skills, creativity, and confidence. We support students
-            in their academic and personal growth.
+            Greenfield College provides quality education
+            and encourages students to develop their skills.
+            We focus on learning, creativity and discipline.
         </p>
     </section>
 
-    <!-- Courses Section -->
-    <section id="courses" class="soft">
-        <h2>Our Departments</h2>
+    <section id="courses">
+        <h2>Our Courses</h2>
 
-        <div class="course">
-            <h3>Computer Science</h3>
-            <p>
-                Learn programming, web development, databases,
-                and modern computing technologies.
-            </p>
-        </div>
+        <table>
+            <tr>
+                <th>S.No.</th>
+                <th>Course</th>
+                <th>Duration</th>
+            </tr>
 
-        <div class="course">
-            <h3>Electronics</h3>
-            <p>
-                Study electronic circuits, communication systems,
-                and electronic devices.
-            </p>
-        </div>
+            <tr>
+                <td>1</td>
+                <td>Computer Science</td>
+                <td>4 Years</td>
+            </tr>
 
-        <div class="course">
-            <h3>Mechanical Engineering</h3>
-            <p>
-                Explore machines, manufacturing, design,
-                and engineering principles.
-            </p>
-        </div>
+            <tr>
+                <td>2</td>
+                <td>Electronics</td>
+                <td>4 Years</td>
+            </tr>
 
-        <div class="course">
-            <h3>Artificial Intelligence</h3>
-            <p>
-                Discover artificial intelligence, data analysis,
-                and machine learning concepts.
-            </p>
-        </div>
+            <tr>
+                <td>3</td>
+                <td>Mechanical Engineering</td>
+                <td>4 Years</td>
+            </tr>
+        </table>
     </section>
 
-    <!-- Faculty Section -->
-    <section id="faculty">
-        <h2>Our Faculty</h2>
-
-        <div class="faculty">
-            <h3>Dr. Ravi Kumar</h3>
-            <p>Department: Computer Science</p>
-            <p>Specialization: Programming and Software Development</p>
-        </div>
-
-        <div class="faculty">
-            <h3>Mrs. Priya Sharma</h3>
-            <p>Department: Electronics</p>
-            <p>Specialization: Electronic Systems</p>
-        </div>
-
-        <div class="faculty">
-            <h3>Mr. Arjun Rao</h3>
-            <p>Department: Mechanical Engineering</p>
-            <p>Specialization: Machine Design</p>
-        </div>
-    </section>
-
-    <!-- Facilities Section -->
-    <section id="facilities" class="soft">
-        <h2>Campus Facilities</h2>
+    <section id="facilities">
+        <h2>Our Facilities</h2>
 
         <div class="facility">
             <h3>Library</h3>
-            <p>Books and resources for learning and research.</p>
+            <p>A place for reading and learning.</p>
         </div>
 
         <div class="facility">
-            <h3>Computer Labs</h3>
-            <p>Practical learning using computers and software.</p>
+            <h3>Computer Lab</h3>
+            <p>Facilities for practical learning.</p>
         </div>
 
         <div class="facility">
             <h3>Sports</h3>
-            <p>Sports activities that encourage teamwork.</p>
-        </div>
-
-        <div class="facility">
-            <h3>Seminar Hall</h3>
-            <p>A venue for workshops, talks, and college events.</p>
+            <p>Activities for fitness and teamwork.</p>
         </div>
     </section>
 
-    <!-- Admissions Section -->
-    <section id="admission" class="admission">
-        <h2>Admissions Open</h2>
+    <section id="admissions">
+        <h2>Admissions Open!</h2>
+        <p>Take the first step towards your future.</p>
 
-        <p>
-            Interested in joining our college?
-            Contact our admissions office for course details,
-            eligibility requirements, and admission procedures.
-        </p>
-
-        <a href="#contact" class="button">Enquire Now</a>
+        <a href="#contact" class="button">Contact Us</a>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="contact">
         <h2>Contact Us</h2>
-
-        <p>Address: College Road, Your City</p>
-        <p>Phone: +91 98765 43210</p>
-        <p>Email: admissions@example.com</p>
-        <p>Office Hours: Monday to Saturday, 9 AM to 4 PM</p>
+        <p>Address: College Road, Vijayawada</p>
+        <p>Email: info@greenfield.example</p>
     </section>
 
-    <!-- Footer -->
     <footer>
-        <p>© 2026 Bright Future College | All Rights Reserved</p>
+        <p>&copy; 2026 Greenfield College</p>
     </footer>
 
 </body>
