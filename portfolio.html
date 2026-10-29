@@ -1,246 +1,204 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Portfolio</title>
+    <title>My Portfolio</title>
 
     <style>
         body {
-            margin: 0;
             font-family: Arial, sans-serif;
-            background-color: white;
-            color: #263238;
-            line-height: 1.6;
+            margin: 0;
+            background-color: #f5f3ff;
+            color: #333333;
+            text-align: center;
         }
 
-        /* Navigation Bar */
         header {
-            background-color: #173b45;
+            background-color: #493267;
             color: white;
-            padding: 20px;
-            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: #e5dcf5;
+            padding: 15px;
         }
 
         nav a {
-            color: white;
+            color: #493267;
             text-decoration: none;
             margin: 10px;
+            font-weight: bold;
         }
 
         nav a:hover {
-            color: #a9e4d7;
+            color: #c0398b;
         }
 
-        /* Home Section */
-        .hero {
-            background-color: #eaf5f2;
-            text-align: center;
-            padding: 60px 20px;
-        }
-
-        .hero h2 {
-            font-size: 35px;
-        }
-
-        .hero span {
-            color: #28766d;
-        }
-
-        .button {
-            display: inline-block;
-            background-color: #28766d;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-
-        .button:hover {
-            background-color: #173b45;
-        }
-
-        /* General Sections */
         section {
-            padding: 30px 10%;
+            padding: 25px;
         }
 
-        section h2 {
-            color: #173b45;
+        h2 {
+            color: #493267;
         }
 
-        .soft {
-            background-color: #f4f8f7;
-        }
-
-        /* Education and Project Boxes */
-        .info-box {
-            background-color: white;
-            padding: 15px;
-            margin: 15px 0;
-            border-left: 4px solid #28766d;
-        }
-
-        /* Skills and Hobbies */
-        .tag {
+        .skill {
             display: inline-block;
-            background-color: #d8eee8;
-            color: #173b45;
-            padding: 8px 12px;
-            margin: 5px;
-            border-radius: 20px;
+            width: 200px;
+            margin: 10px;
+            padding: 15px;
+            background-color: white;
+            border: 1px solid #c9b9e6;
+            border-radius: 8px;
         }
 
-        /* Contact Section */
-        .contact {
-            background-color: #eaf5f2;
-            text-align: center;
+        table {
+            width: 75%;
+            margin: auto;
+            border-collapse: collapse;
+            background-color: white;
         }
 
-        /* Footer */
-        footer {
-            background-color: #173b45;
+        th {
+            background-color: #493267;
             color: white;
-            text-align: center;
+        }
+
+        th, td {
+            border: 1px solid #999999;
             padding: 12px;
         }
 
-        /* Responsive Design */
-        @media (max-width: 600px) {
-            nav a {
-                display: inline-block;
-                margin: 5px;
-            }
+        .project {
+            display: inline-block;
+            width: 250px;
+            margin: 10px;
+            padding: 15px;
+            background-color: #e5dcf5;
+            border-radius: 8px;
+        }
 
-            .hero h2 {
-                font-size: 28px;
-            }
+        #contact {
+            background-color: #e5dcf5;
+        }
+
+        footer {
+            background-color: #493267;
+            color: white;
+            padding: 12px;
         }
     </style>
 </head>
 
 <body>
 
-    <!-- Navigation Bar -->
     <header>
         <h1>My Portfolio</h1>
-
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <p>Student | Learner | Future Developer</p>
     </header>
 
-    <!-- Home Section -->
-    <section id="home" class="hero">
-        <h2>Hello, I'm <span>Your Name</span></h2>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home">
+        <h2>Hello, Welcome to My Portfolio!</h2>
 
         <p>
-            I am a Computer Science student interested in
-            technology, programming, and web development.
+            I am a computer science student learning
+            programming and web development.
         </p>
 
-        <a href="#about" class="button">Know More About Me</a>
+        <p>I enjoy learning new things and creating projects.</p>
     </section>
 
-    <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
 
         <p>
-            I am a first-year B.Tech student in Computer Science
-            and Engineering. I enjoy learning new technologies,
-            developing my skills, and solving problems.
+            My name is Your Name.
+            I am interested in technology, coding
+            and solving problems.
+            My goal is to become a skilled developer.
         </p>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="soft">
-        <h2>Educational Qualifications</h2>
-
-        <div class="info-box">
-            <h3>Bachelor of Technology</h3>
-            <p>Branch: Computer Science and Engineering</p>
-            <p>College: Your College Name</p>
-            <p>Year: First Year</p>
-        </div>
-
-        <div class="info-box">
-            <h3>Intermediate</h3>
-            <p>College: Your Intermediate College Name</p>
-            <p>Year: Your Completion Year</p>
-        </div>
-
-        <div class="info-box">
-            <h3>School Education</h3>
-            <p>School: Your School Name</p>
-            <p>Year: Your Completion Year</p>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
     <section id="skills">
-        <h2>Technical Skills</h2>
+        <h2>My Skills</h2>
 
-        <p>Skills I am learning and developing:</p>
+        <div class="skill">
+            <h3>HTML</h3>
+            <p>Creating webpage structures.</p>
+        </div>
 
-        <span class="tag">HTML</span>
-        <span class="tag">CSS</span>
-        <span class="tag">Python Basics</span>
-        <span class="tag">Problem Solving</span>
-        <span class="tag">Communication</span>
+        <div class="skill">
+            <h3>CSS</h3>
+            <p>Styling webpages.</p>
+        </div>
+
+        <div class="skill">
+            <h3>Python</h3>
+            <p>Learning basic programming.</p>
+        </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="soft">
+    <section id="education">
+        <h2>My Education</h2>
+
+        <table>
+            <tr>
+                <th>Qualification</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td>B.Tech in Computer Science</td>
+                <td>Currently Studying</td>
+            </tr>
+
+            <tr>
+                <td>Intermediate</td>
+                <td>Completed</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="projects">
         <h2>My Projects</h2>
 
-        <div class="info-box">
-            <h3>Personal Portfolio Website</h3>
-            <p>
-                A website created using HTML and CSS to display
-                my profile, education, skills, and interests.
-            </p>
+        <div class="project">
+            <h3>Bakery Website</h3>
+            <p>A simple website displaying bakery products.</p>
         </div>
 
-        <div class="info-box">
-            <h3>Python Practice Programs</h3>
-            <p>
-                Beginner-level Python programs created while
-                learning basic programming concepts.
-            </p>
+        <div class="project">
+            <h3>College Website</h3>
+            <p>A webpage displaying college information.</p>
         </div>
     </section>
 
-    <!-- Hobbies Section -->
-    <section>
-        <h2>Hobbies and Interests</h2>
+    <section id="hobbies">
+        <h2>My Hobbies</h2>
 
-        <span class="tag">Listening to Music</span>
-        <span class="tag">Reading</span>
-        <span class="tag">Learning Technology</span>
-        <span class="tag">Creative Designing</span>
+        <p>
+            Learning new skills, listening to music
+            and exploring technology.
+        </p>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="contact">
         <h2>Contact Me</h2>
-
-        <p>Email: yourname@example.com</p>
-        <p>Location: Your City</p>
-
-        <a href="mailto:yourname@example.com" class="button">
-            Send Me an Email
-        </a>
+        <p>Email: student@example.com</p>
+        <p>Thank you for visiting my portfolio!</p>
     </section>
 
-    <!-- Footer -->
     <footer>
-        <p>© 2026 Your Name | Personal Portfolio Website</p>
+        <p>&copy; 2026 My Portfolio</p>
     </footer>
 
 </body>
